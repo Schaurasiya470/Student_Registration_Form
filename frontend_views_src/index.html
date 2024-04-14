@@ -1,290 +1,221 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Student Registration Form</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
+</head>
+<body>
+    <div id="container" class="container">
+        <h1>Student Registration Form</h1>
 
-
-  <body>
-   <div class="container">
-        <h3>Student Registration Form</h3>
-        <div class="inner-container">
-            <div class="box"><input type="radio" name="11"> Personal Details</div>
-            <div class="box"><input type="radio" name="11">Address Details</div>
-            <div class="box"><input type="radio" name="11">Other Details</div>
-
+        <div id="navbar" class="navbar">
+            <div id="nav1" class="nav1">Personal Details</div>
+            <div id="nav2" class="nav1">Adress Details</div>
+            <div id="nav3" class="nav1">Other Details</div>
         </div>
-        <h6>Personal Details</h6>
-            <form action="#" class="first">
-                <div class="detail-container first">
-                    <div class="d1">
-                        <label for="first">First Name<span style="color: red;">*</span> </label>
-                        <div style="display: flex;">
-                            <i class="fa fa-user icon"></i>
-                            <input type="text" name="first" id="first" required > 
-                        </div>
-                    </div>
-                    <div class="d1">
-                        <label for="first">Last Name </label>
-                        <div>
-                            <input type="text" name="first" id="first"> 
-                        </div>
-                        
-                    </div>
+        
+        <!-- <h3>Personal Details</h3> -->
 
-                    <div class="d1">
-                        <label for="first">Email<span style="color: red;">*</span></label>
-                        <div>
-                            <i class="fa fa-envelope icon"></i>
-                            <input type="email" name="email" id="first" placeholder="sachin@dayal.co.in" required> 
-                        </div>
-                        
-                    </div>
-                    
-                    <div class="d1">
-                        <label for="first">Aadhar No <span style="color: red;">*</span></label>
-                        <div>
-                            <i class="fa fa-address-card icon"></i>
-                            <input type="number" name="first" id="first" required> 
-                        </div>
-                    </div>
+        <form action="#" id="form1" class="form1"> 
+            <h3>Personal Details</h3>     
 
-                    <div class="dob">
-                        <label for="first">DOB <span style="color: red;">*</span></label>
-                        <div>
-                        <i class="fa fa-calendar icon"></i>
-                        <input type="date" name="first" id="first" required>
-                        </div> 
-                    </div>
+            <div class="input1">
+                <label for="firstName">First Name<span style="color: red;">*</span></label>
+                <div>
+                <i class="fa fa-user"></i>
+                <input type="text" name="firstName" required>
+                </div>
+            </div>
+            <div class="input1">
+                <label for="lastName">Last Name</label>
+                <div>
+                <i class="fa fa-user"></i>
+                <input type="text" name="lastName">
+                </div>
+            </div>
+            <div class="input1">
+                <label for="firstName">Email<span style="color: red;">*</span></label>
+                <div>
+                <i class="fa fa-envelope"></i>
+                <input type="email" name="email" required>
+                </div>
+            </div>
+            <div class="input1">
+                <label for="aadhar">Aadhar No<span style="color: red;">*</span></label>
+                <div>
+                <i class="fa fa-address-card"></i>
+                <input type="number" name="aadhar" required>
+                </div>
+            </div>
+            <div class="input1 mobile">                
+                <label for="Mobile">Mobile</label>
+                <div>
+                <i class="fa fa-phone"></i>
+                <input type="number" name="Mobile"  required>
+                </div>
+            </div>
+            <div class="input1 dob">                
+                <label for="dob">DOB<span style="color: red;">*</span></label>
+                <div>
+                <i class="fa fa-calendar"></i>
+                <input type="date" name="dob"  required>
+                </div>
+            </div>
+            <div class="input2">
+                <label for="gender">Gender<span style="color: red;">*</span></label><br>
+                <input type="radio" name="gender">
+                <label for="gender">Male</label>
+                <input type="radio" name="gender" >
+                <label for="gender">Female</label>
+                <input type="radio" name="gender" required>
+                <label for="gender">Others</label>
+            </div>
+            <div class="input3">
+                <label for="upload">Upload Photo<span style="color: red;">*</span></label><br>
+                <span>
+                <input id="yesbtn" type="radio" name="yes">
+                <label for="yes">Yes</label>
+                </span>
+                <span>
+                <input id="nobtn" type="radio" name="yes" >
+                <label for="yes">No</label><br>
+                </span>
+                <div id="file">
+                <input type="file" for="yes" name="firstName" required >
+                </div>
+            </div>
+            <p>In order to process your registration we ask you to provide the following information. Please note that at fields mark with (<span style="color: red;">*</span>) are required </p>
 
-                    <div class="mobile">
-                        <label for="first">Mobile<span style="color: red;">*</span></label>
-                        <div >
-                        <i class="fa fa-phone icon"></i>
-                        <input type="number" name="first" id="first"  required> 
-                        </div>
-                    </div>
+            <div id="button">
+                <button type="button" id="nextbtn1">
+                    <span class>Next</span>
+                    <i class="fa fa-play"></i>
+                </button>
+            </div>
+           
 
-                    <div class="d2 d3">
-                        <label for="gender">Gender <span style="color: red;">*</span></label>
-                        <div>
-                        <input type="radio" name="gender" id="first" required>
-                        <label for="gender">Male</label>
+        </form>
 
-                        <input type="radio" name="gender" id="first" required>
-                        <label for="gender">Female</label>
-                        <input type="radio" name="gender" id="first" required>
-                        <label for="gender">others</label>
-                    
-                        </div>
-                    </div>
-                    <div class="upload">
-                        <label for="upload">Upload Photo<span style="color: red;">*</span></label>
-                        <div>
-                            <input type="radio" name="image" id="first" required>
-                            <label for="image">Yes</label>
-                            <input type="radio" name="image" id="first" required>
-                            <label for="image">No</label>
-                        
-                        </div>
-                        <input type="file" name="file" id="file">
 
-                    </div>
-                    <p>In order to process your registration we ask you to provide the following information. Please note that at fields mark with (<span style="color: red;">*</span>) are required </p>
-                    <br>
-                    <!-- <button class="button">Next</button> -->
-                    <div style="margin-right: 40px ; margin-top: 60px;">
-                        
-                        <button class="button">Next <i class="fa fa-play icon fa1"></i></button>
+        <form action="#" id="form2" class="form2">  
+            <h3>Address Details</h3>      
+
+            <div class="form-group">
+                <label for="country">Country<span style="color: red;">*</span></label>
+                <select class="country" id="country" name="country" onchange="loadStates()" required>
+                  <option value="">Select Country</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="state">State<span style="color: red;">*</span></label>
+                <select class="state" id="state" name="state" onchange="loadCities()" required >
+                  <option value="">Select State</option>
+                  </select>
+              </div>
+              <div class="form-group">
+                <label for="city">City<span style="color: red;">*</span></label>
+                <select class="city" id="city" name="city" required>
+                  <option value="">Select City</option>
+                  </select>
+              </div>
+              <div class="street">
+                <label for="street">Street<span style="color: red;">*</span></label>
+                <input type="text" id="street" name="street" required>
+              </div>
+             <div id="landmark-pincode">
+                <div class="landmark">
+                    <label for="landmark">Landmark<span style="color: red;">*</span></label>
+                    <input type="text" id="landmark" name="landmark">
+                  </div>
+                  <div class="pincode">
+                    <label for="pincode">Pincode<span style="color: red;">*</span></label>
+                    <input type="number" id="pincode" name="pincode" required>
+                  </div>
+             </div>
+             <p>In order to process your registration we ask you to provide the following information. Please note that at fields mark with (<span style="color: red;">*</span>) are required </p>
             
+
+            <div id="button2">                
+                <button type="button" id="backbtn1">
+                    <i class="fa fa-play"></i>
+                    <span class>Back</span>
+                </button>
+                <button type="button" id="nextbtn2">
+                    <span class>Next</span>
+                    <i class="fa fa-play"></i>
+                </button>
+            </div>
+           
+
+        </form>
+
+
+        <form action="#" id="form3" class="form3">
+            <h3>Other Details</h3>        
+
+            <div id="other">
+
+                <div class="userName">
+                    <label for="userName">Username<span style="color: red;">*</span></label>
+                    <div>
+                    <i class="fa fa-user"></i>
+                    <input type="text" name="username" required>
                     </div>
                 </div>
-            </form>        
-
-            <!-- <form action="#" class="second">
-                <div class="detail-container second">
-                    <div class="d1">
-                        <label for="first">Address<span style="color: red;">*</span> </label>
-                        <div style="display: flex;">
-                            <i class="fa fa-user icon"></i>
-                            <input type="text" name="first" id="first" required > 
-                        </div>
-                    </div>
-                    <div class="d1">
-                        <label for="first">Last Name </label>
-                        <div>
-                            <input type="text" name="first" id="first"> 
-                        </div>
-                        
-                    </div>
-        
-                    <div class="d1">
-                        <label for="first">Email<span style="color: red;">*</span></label>
-                        <div>
-                            <i class="fa fa-envelope icon"></i>
-                            <input type="email" name="email" id="first" placeholder="sachin@dayal.co.in" required> 
-                        </div>
-                        
-                    </div>
-                    
-                    <div class="d1">
-                        <label for="first">Aadhar No <span style="color: red;">*</span></label>
-                        <div>
-                            <i class="fa fa-address-card icon"></i>
-                            <input type="number" name="first" id="first" required> 
-                        </div>
-                    </div>
-        
-                    <div class="dob">
-                        <label for="first">DOB <span style="color: red;">*</span></label>
-                        <div>
-                        <i class="fa fa-calendar icon"></i>
-                        <input type="date" name="first" id="first" required>
-                        </div> 
-                    </div>
-        
-                    <div class="mobile">
-                        <label for="first">Mobile<span style="color: red;">*</span></label>
-                        <div >
-                        <i class="fa fa-phone icon"></i>
-                        <input type="number" name="first" id="first"  required> 
-                        </div>
-                    </div>
-        
-                    <div class="d2 d3">
-                        <label for="gender">Gender <span style="color: red;">*</span></label>
-                        <div>
-                        <input type="radio" name="gender" id="first" required>
-                        <label for="gender">Male</label>
-        
-                        <input type="radio" name="gender" id="first" required>
-                        <label for="gender">Female</label>
-                        <input type="radio" name="gender" id="first" required>
-                        <label for="gender">others</label>
-                    
-                        </div>
-                    </div>
-                    <div class="upload">
-                        <label for="upload">Upload Photo<span style="color: red;">*</span></label>
-                        <div>
-                            <input type="radio" name="image" id="first" required>
-                            <label for="image">Yes</label>
-                            <input type="radio" name="image" id="first" required>
-                            <label for="image">No</label>
-                           
-                        </div>
-                        <input type="file" name="file" id="file">
-        
-                    </div>
-                    <p>In order to process your registration we ask you to provide the following information. Please note that at fields mark with (<span style="color: red;">*</span>) are required </p>
-                    <br>
-                    <button class="button">Next</button>
-                    <div style="margin-right: 40px ; margin-top: 60px;">
-                        
-                        <button class="button">Next <i class="fa fa-play icon fa1"></i></button>
-            
+                <div class="password">
+                    <label for="password">Password<span style="color: red;">*</span></label>
+                    <div>
+                    <i class="fa fa-lock"></i>
+                    <input type="password" name="password" required>
                     </div>
                 </div>
-            </form>
+    
+            </div>
+            <div class="hobbies" id="hobbies">
+                <label for="hobbies">Hobbies<span style="color: red;">*</span></label>
+                <div class="checkbox">
+                    <input type="checkbox" name="" id="">
+                    <label for="">Cooking</label>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Traveling</label>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Planting</label>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Sports</label>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Swimming</label>
+                </div><br>
+                <p>In order to process your registration we ask you to provide the following information. Please note that at fields mark with (<span style="color: red;">*</span>) are required </p>
+            </div><br>
+            <!-- <p>In order to process your registration we ask you to provide the following information. Please note that at fields mark with (<span style="color: red;">*</span>) are required </p> -->
+      
+            <div id="button3">                
+                <button type="button" id="backbtn2">
+                    <i class="fa fa-play"></i>
+                    <span class>Back</span>
+                </button>
+                <button type="submit" id="nextbtn3">
+                    <span class>Submit</span>
+                    <i class="fa fa-check"></i>
+                </button>
+            </div>
+           
+
+        </form>
 
 
-            <form action="#" class="third">
-                <div class="detail-container third">
-                    <div class="d1">
-                        <label for="first">User ID<span style="color: red;">*</span> </label>
-                        <div style="display: flex;">
-                            <i class="fa fa-user icon"></i>
-                            <input type="text" name="first" id="first" required > 
-                        </div>
-                    </div>
-                    <div class="d1">
-                        <label for="first">Password </label>
-                        <div>
-                            <input type="text" name="first" id="first"> 
-                        </div>
-                        
-                    </div>
-        
-                    <div class="d1">
-                        <label for="first">Email<span style="color: red;">*</span></label>
-                        <div>
-                            <i class="fa fa-envelope icon"></i>
-                            <input type="email" name="email" id="first" placeholder="sachin@dayal.co.in" required> 
-                        </div>
-                        
-                    </div>
-                    
-                    <div class="d1">
-                        <label for="first">Aadhar No <span style="color: red;">*</span></label>
-                        <div>
-                            <i class="fa fa-address-card icon"></i>
-                            <input type="number" name="first" id="first" required> 
-                        </div>
-                    </div>
-        
-                    <div class="dob">
-                        <label for="first">DOB <span style="color: red;">*</span></label>
-                        <div>
-                        <i class="fa fa-calendar icon"></i>
-                        <input type="date" name="first" id="first" required>
-                        </div> 
-                    </div>
-        
-                    <div class="mobile">
-                        <label for="first">Mobile<span style="color: red;">*</span></label>
-                        <div >
-                        <i class="fa fa-phone icon"></i>
-                        <input type="number" name="first" id="first"  required> 
-                        </div>
-                    </div>
-        
-                    <div class="d2 d3">
-                        <label for="gender">Gender <span style="color: red;">*</span></label>
-                        <div>
-                        <input type="radio" name="gender" id="first" required>
-                        <label for="gender">Male</label>
-        
-                        <input type="radio" name="gender" id="first" required>
-                        <label for="gender">Female</label>
-                        <input type="radio" name="gender" id="first" required>
-                        <label for="gender">others</label>
-                    
-                        </div>
-                    </div>
-                    <div class="upload">
-                        <label for="upload">Upload Photo<span style="color: red;">*</span></label>
-                        <div>
-                            <input type="radio" name="image" id="first" required>
-                            <label for="image">Yes</label>
-                            <input type="radio" name="image" id="first" required>
-                            <label for="image">No</label>
-                           
-                        </div>
-                        <input type="file" name="file" id="file">
-        
-                    </div>
-                    <p>In order to process your registration we ask you to provide the following information. Please note that at fields mark with (<span style="color: red;">*</span>) are required </p>
-                    <br>
-                    <button class="button">Next</button>
-                    <div style="margin-right: 40px ; margin-top: 60px;">
-                        
-                        <button class="button">Next <i class="fa fa-play icon fa1"></i></button>
-            
-                    </div>
-                </div>
-            </form>
-             -->
-            
-            
 
-   </div>
+    </div>
+    
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="./app.js"></script>
-  </body>
+
+
+
+
+
+    <script src="script.js" async></script>
+</body>
 </html>
