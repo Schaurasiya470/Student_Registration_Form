@@ -4,30 +4,131 @@
 }
 
 body{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Roboto", sans-serif;
     font-size: 18px;
     display: flex;
     justify-content: center;
     justify-items: center;
+    flex-wrap: wrap;
+}
+
+#main-container{
+    width: 90%;
+    height: 710px;
+    background-color: white;
+    border: 1px solid black;
+    position: relative;
+    margin-top: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 450;
+    overflow-y: hidden;
 }
 h1{
     font-size: 40px;
     margin: 10px;
     padding: 10px;
+    font-family: "Roboto", sans-serif;
 }
 h3{
     width: 100%;
     font-size: 20px;
     margin: 20px;
+    font-family: "Roboto", sans-serif;
 }
 p{
-    font-size: 20px;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
 }
+
+#list-view{
+    width: 100%;
+    height: 700px;
+    background-color: white;
+    border: 1px solid black;
+    position: relative;
+    /* margin-top: 20px; */
+    font-family: "Roboto", sans-serif;
+    font-weight: 450;
+
+}
+
+.list-button {
+    display: flex;
+    justify-content:space-between ;
+}
+.list-button i{
+    margin: 3px;
+    /* padding-top: 2px; */
+    padding: 3px;
+    background-color: white;
+    color: #14a44e;
+    border-radius: 100%;
+    margin-bottom:5px ;
+    font-size: medium;
+    border: none;
+    text-align: center;
+}
+.list-button button{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    background-color: #14a44e;
+}
+.list-button h2{
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+table{
+    width: 100%;
+    border: 1px solid rgb(10, 8, 8);
+    border-collapse: collapse;
+    /* text-align: center; */
+    padding: 10px;
+}
+thead{
+    background-color: #14a44e;
+    color: white;
+    height: 50px;
+}
+
+tr,td{
+    color: black;
+    border: 1px solid black;
+
+
+}
+
+tbody tr:nth-child(even) {
+    background-color: #d3cfcf;
+  }
+  
+tbody tr:nth-child(odd) {
+    background-color: rgb(248, 247, 247);
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #container{
     /* margin-left: 150px; */
-    margin-top: 20px;
-    width: 80%;
+    /* margin-top: 20px; */
+    width: 100%;
     height: 700px;
     background-color: rgb(255,255,255,255);
     border: 2px solid black;
@@ -71,11 +172,32 @@ p{
     justify-content: space-between;
     justify-items: center;
     text-align: center;
-    border: 2px solid black ;
+    border: 1px solid black ;
     padding-top: 20px;
+    border-radius: 3px;
+    color: #aeb0af;
 }
-.nav2{
-    background-color:rgb(47, 137, 47);
+#nav1{
+    color: white;
+}
+.nav1 input[type=radio]{
+    transform: scale(1.5);
+}
+.nav1 span{
+    padding-right: 8px;
+    margin-right: 10px;
+
+}
+.nav1 i{
+    width: 18px;
+    height: 18px;
+}
+.nav1 i{
+    background-color: #14a44e;
+    color:white;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding-top: 2px;
 }
 
 #form1{
@@ -113,7 +235,7 @@ p{
     border: 2px solid black;
     border-radius: 6px;
     font-size: 15px;
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .street input{
@@ -121,7 +243,7 @@ p{
     height: 100px;
     border-radius: 6px;
     font-size: 20px;
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 .landmark{
     display: flex;
@@ -135,19 +257,20 @@ p{
 }
 
 .landmark input{
-    width: 400px;
-    height: 40px;
+    width: 395px;
+    height: 30px;
     border-radius: 6px;
     font-size: 20px;
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
+    margin-right: 10px;
 
 }
 .pincode input{
-    width: 400px;
-    height: 40px;
+    width: 395px;
+    height: 30px;
     border-radius: 6px;
     font-size: 20px;
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .landmark-pincode{
@@ -166,18 +289,29 @@ p{
 }
 
 .userName input[type=text]{
-    width: 350px;
-    height: 40px;
+    width: 600px;
+    height: 35px;
     border-radius: 6px;
+    padding-left: 5px;
     font-size: 20px;
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
 }
-.password input[type=password]{
-    width: 350px;
-    height: 40px;
+
+#form3 label{
+    width: 380px;
+    height: 30px;
+    padding: 3px;
+    border-radius: 6px;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+}
+#form3 input[type=password]{
+    width: 600px;
+    height: 30px;
+    padding: 3px;
     border-radius: 6px;
     font-size: 20px;
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 #form3{
@@ -208,70 +342,62 @@ p{
 }
 
 #form1 input[type=text]{
-    width: 300px;
+    width: 380px;
     height: 30px;
     padding: 3px;
+    margin: 0;
     border-radius: 6px;
     font-size: 20px;
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
+/* .input1 div::before{
+    content: "";
+    background-color: red;
+    margin: 0;
+    padding: 0;
+} */
 
-#form3 label{
-    width: 300px;
-    height: 30px;
-    padding: 3px;
-    border-radius: 6px;
-    font-size: 18px;
-    font-family: sans-serif;
-}
-#form3 input[type=password]{
-    width: 350px;
-    height: 30px;
-    padding: 3px;
-    border-radius: 6px;
-    font-size: 20px;
-    font-family: sans-serif;
-}
+
 
 #form1 input[type=email]{
-    width: 250px;
+    width: 380px;
     height: 30px;
     padding: 3px;
     border-radius: 6px;
     font-size: 20px;
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 #form1 input[name=aadhar]{
-    width: 250px;
+    width: 370px;
     height: 30px;
     padding: 3px;
     border-radius: 6px;
     font-size: 20px;
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 #form1 input[name=Mobile]{
-    width: 150px;
+    width: 135px;
     height: 30px;
     padding: 3px;
     border-radius: 6px;
     font-size: 20px;
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 #form1 input[name=dob]{
-    width: 125px;
+    width: 135px;
     height: 30px;
     padding: 3px;
     border-radius: 6px;
     font-size: 15px;
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .input3 input[type=file]{
     width: 300px;
     height: 30px; 
     font-size: 20px;
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 
@@ -287,6 +413,7 @@ form i{
     background-color: rgba(158, 157, 155, 0.829); 
     border: 1px solid black; 
     padding: 8px;
+    margin: 0;
     border-radius: 2px;
 }
 
@@ -294,7 +421,7 @@ form i{
 #hobbies{
     width: 100%;
     height: 100px;
-    padding: 50px 50px 50px 50px;
+    padding-left: 50px;
     font-size: 20px;
     
 }
@@ -345,7 +472,7 @@ form i{
 #nextbtn1{
     width: 200px;
     height: 50px;    
-    background-color: rgb(47, 137, 47);
+    background-color: #14a44e;
     margin-right: 200px;
     margin-top: 80px;
     margin-bottom: 50px;
@@ -355,7 +482,7 @@ form i{
 #nextbtn2{
     width: 200px;
     height: 50px;    
-    background-color: rgb(47, 137, 47);
+    background-color: #14a44e;
     /* margin-right: 100px; */
     margin-left: 800px;
     margin-top: 50px;
@@ -364,7 +491,7 @@ form i{
 #backbtn1{
     width: 200px;
     height: 50px;    
-    background-color: rgb(47, 137, 47);
+    background-color:white;
     /* margin-right: 100px; */
     margin-left: 30px;
     margin-top: 50px;
@@ -374,7 +501,7 @@ form i{
 #nextbtn3{
     width: 200px;
     height: 50px;    
-    background-color: rgb(47, 137, 47);
+    background-color: #14a44e;
     /* margin-right: 100px; */
     margin-left: 800px;
     margin-top: 50px;
@@ -384,7 +511,7 @@ form i{
 #backbtn2{
     width: 200px;
     height: 50px;    
-    background-color: rgb(47, 137, 47);
+    background-color: white;
     /* margin-right: 100px; */
     margin-left: 30px;
     margin-top: 50px;
@@ -401,20 +528,20 @@ form i{
 }
 
 #nextbtn1 i{
-    background-color: rgb(47, 137, 47);
+    background-color: #14a44e;
     border: 0;
-    font-size: 20px;
+    font-size: 15px;
     color: white;
 }
 #nextbtn2 i{
-    background-color: rgb(47, 137, 47);
+    background-color: #14a44e;
     border: 0;
-    font-size: 20px;
+    font-size: 15px;
     color: white;
 }
 
 #nextbtn3 i{
-    background-color: rgb(47, 137, 47);
+    background-color:#14a44e;
     border: 0;
     font-size: 20px;
     color: white;
@@ -423,29 +550,29 @@ form i{
 #backbtn1 span{
     font-size: 20px;
     font-weight: 500px;
-    color: white;
+    color: rgb(83, 80, 80);
     margin-right: 5px;
 }
 
 #backbtn2 span{
     font-size: 20px;
     font-weight: 500px;
-    color: white;
+    color:rgb(83, 80, 80);
     margin-right: 5px;
 }
 
 #backbtn1 i{
-    background-color: rgb(47, 137, 47);
+    background-color: #f8fcfa;
     border: 0;
-    font-size: 20px;
-    color: white;
+    font-size: 15px;
+    color: rgb(83, 80, 80);
     rotate: 180deg;
 }
 
 #backbtn2 i{
-    background-color: rgb(47, 137, 47);
+    background-color: white;
     border: 0;
-    font-size: 20px;
-    color: white;
+    font-size: 15px;
+    color: rgb(83, 80, 80);
     rotate: 180deg;
 }

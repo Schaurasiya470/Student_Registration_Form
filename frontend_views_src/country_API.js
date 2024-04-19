@@ -1,68 +1,3 @@
-const nextbtn1 = document.getElementById('nextbtn1');
-const nextbtn2 = document.getElementById('nextbtn2');
-const nextbtn3 = document.getElementById('nextbtn3');
-const backbtn1 = document.getElementById('backbtn1');
-const backbtn2 = document.getElementById('backbtn2');
-
-const form1 = document.getElementById('form1');
-const form2 = document.getElementById('form2');
-const form3 = document.getElementById('form3');
-
-const nav1 = document.getElementById('nav1');
-const nav2 = document.getElementById('nav2');
-const nav3 = document.getElementById('nav3');
-const nobtn = document.getElementById('nobtn');
-const yesbtn = document.getElementById('yesbtn');
-const file = document.getElementById('file');
-
-
-nav1.style.backgroundColor = "rgb(47, 137, 47)";
-nobtn.addEventListener('click',()=>{
-    file.style.display="None";
-
-});
-
-yesbtn.addEventListener('click',()=>{
-    file.style.display="block";
- 
- });
-
-nextbtn1.addEventListener('click',()=>{
-    form2.style.top="-550px";
-    nav1.style.backgroundColor = "white";
-    nav2.style.backgroundColor = "rgb(47, 137, 47)";
-
-});
-
-nextbtn2.addEventListener('click',()=>{
-    form3.style.top="-1100px";
-    nav2.style.backgroundColor = "white";
-    nav3.style.backgroundColor = "rgb(47, 137, 47)";
-
-});
-
-backbtn1.addEventListener('click',()=>{
-    form2.style.top="550px";
-    form3.style.top="1100px";
-    nav1.style.backgroundColor = "rgb(47, 137, 47)";
-    nav2.style.backgroundColor = "white";
-
-});
-
-// nextbtn3.addEventListener('click',()=>{
-//     form3.style.top="-500px";
-
-// });
-
-backbtn2.addEventListener('click',()=>{
-    // form2.style.top="500px";
-    form3.style.top="1100px";
-    nav2.style.backgroundColor = "rgb(47, 137, 47)";
-    nav3.style.backgroundColor = "white";
-
-});
-
-
 var config = {
     cUrl: 'https://api.countrystatecity.in/v1/countries',
     ckey: 'NHhvOEcyWk50N2Vna3VFTE00bFp3MjFKR0ZEOUhkZlg4RTk1MlJlaA=='
@@ -136,6 +71,4 @@ function loadCities() {
         })
     })
 }
-
 window.onload = loadCountries
-
