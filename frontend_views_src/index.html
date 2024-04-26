@@ -19,8 +19,9 @@
 
     <div id="list-view" class="list-view">
         <div class="list-button">
+            <!-- <img src="#" alt="No image" id="img"> -->
             <h2>List View wireframe</h2>
-            <button type="button" id="list-button"><i class="fa fa-plus"></i></button>
+            <button type="button" id="list-button"><i class="fa fa-plus"></i></button>            
         </div>
         <table >
             <thead>
@@ -33,7 +34,7 @@
                     <td>Address Details</td>
                     <td>Login Details</td>
                     <td>Hobbies</td>
-                    <td>.......</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
                 
             </thead>
             <tbody id="tbody">
@@ -41,6 +42,11 @@
             </tbody>
             <tfoot></tfoot>
         </table>
+
+    </div>
+    <div id="action-list">
+        <div class="action-item"><span class="fa fa-pencil"></span>Modify</div>
+        <div class="action-item"><span class="fa fa-trash"></span>Delete</div>
     </div>
     <div id="container" class="container">
         <h1>Student Registration Form</h1>
@@ -59,9 +65,12 @@
                 <label for="firstName">First Name<span style="color: red;">*</span></label>
                 <div >
                     <i class="fa fa-user"></i>
-                <input id="firstName" type="text" name="firstName" value="" onblur="fnameValidate()">
+                    <!-- <span class="input-group-text" id="basic-addon1"></span></span> -->
+                    <!-- <i style="color:black; width:20px; height:20px; padding:5px" class="fa fa-ellipsis-vertical"> -->
+                    <!-- <input type="text" class="form-control"  aria-label="Username" aria-describedby="basic-addon1"> -->
+                    <input id="firstName" type="text" name="firstName" value="" onblur="fnameValidate()">
                 </div>
-                <span id="fname-error" style="color: red;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span id="fname-error" style="color: red;">&nbsp;&nbsp;</span>
             </div>
             <div class="input1">
                 <label for="lastName">Last Name</label>
@@ -106,9 +115,9 @@
             <div class="input2">
                 <label for="gender">Gender<span style="color: red;">*</span></label><br>
                 <input type="radio" name="gender">
-                <label for="gender">Male</label>
+                <label for="gender">Male</label>&nbsp;&nbsp;
                 <input type="radio" name="gender" >
-                <label for="gender">Female</label>
+                <label for="gender">Female</label>&nbsp;&nbsp;
                 <input type="radio" name="gender" required>
                 <label for="gender">Others</label>
                 <span id="gender-error" style="color: red;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
@@ -167,7 +176,8 @@
               </div>
               <div class="street">
                 <label for="street">Street<span style="color: red;">*</span></label>
-                <input type="text" id="street" name="street" onblur="streetValidate()">
+                <!-- <input type="Textarea" id="street" name="street" onblur="streetValidate()"> -->
+                <textarea name="street" id="street" rows="6" onblur="streetValidate()"></textarea>
                 <span id="street-error" style="color: red;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
               </div>
              <div id="landmark-pincode">
@@ -201,7 +211,7 @@
 
 
         <form action="action.php" method="post" id="form3" class="form3">
-            <h3>Other Details</h3>        
+            <h3>Other Details</h3>     
 
             <div id="other">
 
@@ -217,7 +227,7 @@
                     <label for="password">Password<span style="color: red;">*</span></label>
                     <div>
                     <i class="fa fa-lock"></i>
-                    <input id="password" type="password" name="password" onblur="passwordValidate()">
+                    <input id="password" type="password" name="password"  onblur="passwordValidate()">
                     </div>
                     <span id="password-error" style="color: red;">&nbsp;&nbsp;&nbsp;</span>
                 </div>
@@ -256,12 +266,15 @@
 
         </form>
 
+
+
+
         
 
     </div>
     
 
-
+   
 
 
 
@@ -270,6 +283,7 @@
     <script src="country_API.js" async></script>
     <script src="formValidate.js" async></script>
     <script src="list_View.js" async></script>
+    <script src="image_api.js" async></script>
 </div>
 </body>
 </html>

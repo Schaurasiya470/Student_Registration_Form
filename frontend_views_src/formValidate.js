@@ -93,7 +93,7 @@ function aadharValidate() {
     aadhar_error.innerHTML='<span id="fname-error" style="color: red; font-size: 15px;"></span>';
     return ture; 
 }
-function mobileValidate() {
+function dobValidate() {
     const dob = document.getElementById('dob').value;
     const dob_error = document.getElementById('dob-error');
 

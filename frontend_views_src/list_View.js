@@ -14,15 +14,29 @@ fetch(list_View_Api)
         tr.innerHTML=
         `<td> ${element.id} </td>
         <td>${element.first_name+" "+element.last_name}</td>
-        <td>${element.email_id}<br>${element.mobile}</td>
+        <td>&nbsp;<i class="fa fa-envelope"></i>&nbsp;${element.email_id}<br>&nbsp; <i class="fa fa-phone"></i>&nbsp;${element.mobile}</td>
         <td>${element.aadhar_no}</td>
         <td>${element.date_of_birth}</td>
         <td>${element.gender}</td>
         <td>${element.street +" "+element.landmark}<br>${element.city +" "+element.pincode}<br>${element.state +" "+element.country}</td>
-        <td> ${element.username}<br>  ${element.password}</td>
+        <td>&nbsp;<i class="fa fa-user"></i>&nbsp;${element.username}<br>&nbsp;<i class="fa fa-lock"></i>&nbsp; ${element.password}</td>
         <td> ${element.hobbies}</td>
-        <td>.......</td>`
+        <td><div class="action-btn" onclick="actionList()">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        </div>
+        <div id="action-list">
+        <div class="action-item"><span class="fa fa-pencil"></span>Modify</div>
+        <div class="action-item"><span class="fa fa-trash"></span>Delete</div>
+        </div>
+        </td>`
         tbody.appendChild(tr);
     });
 })
 .catch(error => console.error('Error loading countries:', error));
+
+function actionList() {
+    const action_btn = document.getElementById('action-list');
+    action_btn.style.display='block';    
+}
