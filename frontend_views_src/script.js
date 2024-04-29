@@ -18,18 +18,18 @@ const yesbtn = document.getElementById('yesbtn');
 const file = document.getElementById('file');
 
 
-nav1.style.backgroundColor = "#14a44e";
-nobtn.addEventListener('click',()=>{
+nav1.style.backgroundColor = "#14a44e";     
+nobtn.addEventListener('click',()=>{            // upload file functionality (Hide the upload button)
     file.style.display="None";
 
 });
 
-yesbtn.addEventListener('click',()=>{
+yesbtn.addEventListener('click',()=>{        // upload file functionality (show the upload button)
     file.style.display="block";
  
  });
 
-nextbtn1.addEventListener('click',()=>{
+nextbtn1.addEventListener('click',()=>{           // all the changes which made upon 1st next button clicked
     form2.style.top="-550px";
     nav1.style.backgroundColor = "white";
     nav2.style.backgroundColor = "#14a44e";
@@ -42,7 +42,7 @@ nextbtn1.addEventListener('click',()=>{
 
 });
 
-nextbtn2.addEventListener('click',()=>{
+nextbtn2.addEventListener('click',()=>{            // all the changes which made upon 2st next button clicked
     form3.style.top="-1100px";
     nav2.style.backgroundColor = "white";
     nav3.style.backgroundColor = "#14a44e";
@@ -57,7 +57,7 @@ nextbtn2.addEventListener('click',()=>{
 
 });
 
-backbtn1.addEventListener('click',()=>{
+backbtn1.addEventListener('click',()=>{      // all the changes which made upon 1st back button clicked
     form2.style.top="550px";
     form3.style.top="1100px";
     nav1.style.backgroundColor = "#14a44e";
@@ -76,8 +76,8 @@ backbtn1.addEventListener('click',()=>{
 
 // });
 
-backbtn2.addEventListener('click',()=>{
-    // form2.style.top="500px";
+backbtn2.addEventListener('click',()=>{            // all the changes which made upon 2st back button clicked
+    // form2.style.top="500px"; 
     form3.style.top="1100px";
     nav2.style.backgroundColor = "#14a44e";
     nav3.style.backgroundColor = "white";
@@ -92,9 +92,8 @@ backbtn2.addEventListener('click',()=>{
 const list_view = document.getElementById('list-view');
 const list_button = document.getElementById('list-button');
 
-list_button.addEventListener('click',()=>{
-
-    list_view.style.display='None';
-    container.style.display='block';
+list_button.addEventListener('click',()=>{                                                       
+    list_view.style.display='None';                   // when '+' button is clicked then hiding the list-view container 
+    container.style.display='block';                  // and showing the form container
 });
 

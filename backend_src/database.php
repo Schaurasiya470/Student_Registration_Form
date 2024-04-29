@@ -4,7 +4,7 @@ $username = "sachinc_bit";
 $password = "Sc#9525&"; 
 $dbname = "db_sachinc_bit";
 
-$conn = mysqli_connect($servername, $username, $password, $dbname);
+$conn = mysqli_connect($servername, $username, $password, $dbname);   
 
 // if ($conn->connect_error) {
 //   die("Connection failed: " . $conn->connect_error);

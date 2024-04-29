@@ -1,4 +1,6 @@
-function fnameValidate() {
+
+
+function fnameValidate() {     // fnameValidate() function enable the client side validation on first name
     const fname = document.getElementById('firstName').value;
     const fname_error = document.getElementById('fname-error')
 
@@ -18,9 +20,9 @@ function fnameValidate() {
         fname_error.innerHTML='<span id="fname-error" style="color: red; font-size: 15px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*First name must be atleast three character</span>';
         return true;  
     }
-    if (fname.length>100) {
+    if (fname.length>30) {
         console.log('hello');
-        fname_error.innerHTML='<span id="fname-error" style="color: red; font-size: 15px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*First name must be atmost 100 character</span>';
+        fname_error.innerHTML='<span id="fname-error" style="color: red; font-size: 15px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*First name must be atmost 30 character</span>';
         return true;  
     }
    
@@ -32,7 +34,7 @@ function fnameValidate() {
 
 }
 
-function lnameValidate() {
+function lnameValidate() {      // lnameValidate() function enable the client side validation on last name
     const lname = document.getElementById('lastName').value;
     const lname_error = document.getElementById('lname-error');
 
@@ -46,8 +48,8 @@ function lnameValidate() {
         lname_error.innerHTML='<span id="fname-error" style="color: red; font-size: 15px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Last name only includes alphabates and spaces</span>';
         return true;  
     }
-    if (lname.length>100) {
-        lname_error.innerHTML='<span id="fname-error" style="color: red; font-size: 15px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Last name must be atmost 100 character</span>';
+    if (lname.length>30) {
+        lname_error.innerHTML='<span id="fname-error" style="color: red; font-size: 15px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Last name must be atmost 30 character</span>';
         return true;  
     }
 
@@ -57,7 +59,7 @@ function lnameValidate() {
     
 }
 
-function emailValidate() {
+function emailValidate() {          // emailValidate() function enable the client side validation on email
     const email = document.getElementById('email').value;
     const email_error = document.getElementById('email-error');
 
@@ -70,13 +72,17 @@ function emailValidate() {
         email_error.innerHTML='<span id="fname-error" style="color: red; font-size: 15px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Enter correct Email id</span>';
         return true;  
     }
+    if (email.length>100) {
+        email_error.innerHTML='<span id="fname-error" style="color: red; font-size: 15px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Email must be atmost 100 character</span>';
+        return true;  
+    }
 
     email_error.innerHTML='<span id="fname-error" style="color: red; font-size: 15px;"></span>';
     return ture; 
     
 }
 
-function aadharValidate() {
+function aadharValidate() {         // aadharValidate() function enable the client side validation on Aadhar no
     const aadhar = document.getElementById('aadhar').value;
     const aadhar_error = document.getElementById('aadhar-error');
 
@@ -93,7 +99,7 @@ function aadharValidate() {
     aadhar_error.innerHTML='<span id="fname-error" style="color: red; font-size: 15px;"></span>';
     return ture; 
 }
-function dobValidate() {
+function dobValidate() {            // dobValidate() function enable the client side validation on date of birth
     const dob = document.getElementById('dob').value;
     const dob_error = document.getElementById('dob-error');
 
@@ -105,7 +111,7 @@ function dobValidate() {
     return ture; 
 }
 
-function mobileValidate() {
+function mobileValidate() {            // mobileValidate() function enable the client side validation on Mobile No
     const mobile = document.getElementById('mobile').value;
     const mobile_error = document.getElementById('mobile-error');
 
@@ -123,7 +129,7 @@ function mobileValidate() {
     return ture; 
 }
 
-function countryValidate() {
+function countryValidate() {            // CountryValidate() function enable the client side validation on Couuntry name
     const country = document.getElementById('country').value;
     const country_error = document.getElementById('country-error');
 
@@ -135,7 +141,7 @@ function countryValidate() {
     return ture; 
 }
 
-function stateValidate() {
+function stateValidate() {              // StateValidate() function enable the client side validation on State name
     const state = document.getElementById('state').value;
     const state_error = document.getElementById('state-error');
 
@@ -146,7 +152,7 @@ function stateValidate() {
     state_error.innerHTML='<span id="fname-error" style="color: red; font-size: 15px;"></span>';
     return ture; 
 }
-function cityValidate() {
+function cityValidate() {               // cityValidate() function enable the client side validation on City name
     const city = document.getElementById('city').value;
     const city_error = document.getElementById('city-error');
 
@@ -158,7 +164,7 @@ function cityValidate() {
     return ture; 
 }
 
-function streetValidate() {
+function streetValidate() {             // streetValidate() function enable the client side validation on Street
     const street = document.getElementById('street').value;
     const street_error = document.getElementById('street-error');
 
@@ -182,7 +188,7 @@ function streetValidate() {
 
     
 }
-function landmarkValidate() {
+function landmarkValidate() {           // landmarkValidate() function enable the client side validation on Landmark field
     const landmark = document.getElementById('landmark').value;
     const landmark_error = document.getElementById('landmark-error');
 
@@ -206,7 +212,7 @@ function landmarkValidate() {
 
     
 }
-function pincodeValidate() {
+function pincodeValidate() {                // pincodeValidate() function enable the client side validation on Pincode
     const pincode = document.getElementById('pincode').value;
     const pincode_error = document.getElementById('pincode-error');
 
@@ -222,7 +228,7 @@ function pincodeValidate() {
     return ture; 
 }
 
-function usernameValidate() {
+function usernameValidate() {               // usernameValidate() function enable the client side validation on Username
     const username = document.getElementById('username').value;
     const username_error = document.getElementById('username-error');
 
@@ -230,14 +236,18 @@ function usernameValidate() {
        username_error.innerHTML='<span id="fname-error" style="color: red;font-size: 15px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Username can not be empty </span>';
         return true;
     }
+    if (username.length<6) {
+        username_error.innerHTML='<span id="fname-error" style="color: red; font-size: 15px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Username must be atleast 5 character</span>';
+        return true;  
+    }
 
     const exp = /^[a-zA-Z0-9]+$/;
     if (!exp.test(username)) {
-        username_error.innerHTML='<span id="fname-error" style="color: red; font-size: 15px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Username only include alphabates and numbers</span>';
+        username_error.innerHTML='<span id="fname-error" style="color: red; font-size: 15px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Username must be alphanumeric value only</span>';
         return true;  
     }
-    if (username.length>100) {
-        username_error.innerHTML='<span id="fname-error" style="color: red; font-size: 15px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Username must be atmost 100 character</span>';
+    if (username.length>30) {
+        username_error.innerHTML='<span id="fname-error" style="color: red; font-size: 15px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Username must be atmost 30 character</span>';
         return true;  
     }
 
@@ -246,13 +256,17 @@ function usernameValidate() {
 
     
 }
-function passwordValidate() {
+function passwordValidate() {               // passwordValidate() function enable the client side validation on Password
     const password = document.getElementById('password').value;
     const password_error = document.getElementById('password-error');
 
     if (password=='') {
        password_error.innerHTML='<span id="fname-error" style="color: red;font-size: 15px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Password can not be empty </span>';
         return true;
+    } 
+    if (password.length<11) {
+        password_error.innerHTML='<span id="fname-error" style="color: red; font-size: 15px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Password must be atleast 10 characters</span>';
+        return true;  
     }
 
     // const exp = /^[a-zA-Z0-9]+$/;
@@ -260,8 +274,8 @@ function passwordValidate() {
     //     password_error.innerHTML='<span id="fname-error" style="color: red; font-size: 15px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Password includes alphabates ,numbers and all special charaters</span>';
     //     return true;  
     // }
-    if (password.length>100) {
-        password_error.innerHTML='<span id="fname-error" style="color: red; font-size: 15px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Password must be atmost 100 character</span>';
+    if (password.length>30) {
+        password_error.innerHTML='<span id="fname-error" style="color: red; font-size: 15px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Password must be atmost 30 character</span>';
         return true;  
     }
 
@@ -271,7 +285,7 @@ function passwordValidate() {
     
 }
 
-function hobbiesValidate(checkboxGroup) {
+function hobbiesValidate(checkboxGroup) {               // hobbiesValidate() function enable the client side validation on Hobbies 
     hobbies_error = document.getElementById('hobbies-error');
     const checkedBoxes = checkboxGroup.filter(checkbox => checkbox.checked);
     const numChecked = checkedBoxes.length;

@@ -5,11 +5,11 @@ const delete_API = 'http://localhost/Dayal_project/DIS_GIT_sachinc_bit/backend_s
 
 const tbody = document.getElementById('tbody');
 
-fetch(list_View_Api)
-.then(Response =>Response.json())
+fetch(list_View_Api)                    // Returning a promise and then consuming the recieving details
+.then(Response =>Response.json())       // parsing the data in json format
 .then(data =>{
     console.log(data);
-    data.forEach(element => {
+    data.forEach(element => {             // rendering the all details available in that json file
         const tr = document.createElement('tr');
         tr.innerHTML=
         `<td> ${element.id} </td>
@@ -36,7 +36,7 @@ fetch(list_View_Api)
 })
 .catch(error => console.error('Error loading countries:', error));
 
-function actionList() {
+function actionList() {                 
     const action_btn = document.getElementById('action-list');
     action_btn.style.display='block';    
 }
