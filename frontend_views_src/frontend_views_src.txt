@@ -1,2 +1,0 @@
-sinA=BC/AC=4/5
-COSA=AB/AC=3/5
